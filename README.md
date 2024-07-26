@@ -10,7 +10,7 @@ Liabraries are listed as follow, which can be installed via the command `pip ins
 
 Please download the crawl-300d-2M.vec.zip from https://fasttext.cc/docs/en/english-vectors.html.
 
-## Data sets
+## Datasets
 
 ### ReVerb45K (obtained from [1])  
 triples: 45k; noun phrases: 15.5k   
@@ -26,7 +26,3 @@ used by the previous work: [CMVC](https://dl.acm.org/doi/abs/10.1145/3534678.353
 ### Run DUVK on the OPIEC59K data set:
     python DUVK_main_opiec.py
 
-
-[1] Vashishth S, Jain P, Talukdar P. Cesi: Canonicalizing open knowledge bases using embeddings and side information. WWW'2018, 1317-1327.   
-
-[2] Shen W, Yang Y, Liu Y. Multi-View Clustering for Open Knowledge Base Canonicalization. SIGKDD'2022, 1578-1588.
