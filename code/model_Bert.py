@@ -45,11 +45,11 @@ class Bert_Model(object):
     def __init__(self, params, side_info):
         self.p = params
         self.side_info = side_info
-        self.batch_size = 6
+        self.batch_size = 12
         self.negative_sample_size = 5
         self.epochs = 200
         # self.lr = 0.005
-        self.lr = 0.001
+        self.lr = 0.002
         # self.K = K
         print('self.epochs:', self.epochs)
         self.max_length = 256
@@ -130,7 +130,7 @@ class Bert_Model(object):
 
         optimizer = optim.SGD(bert_embedding_model.parameters(), lr=self.lr)
         criterion = nn.CrossEntropyLoss()
-        early_stopping = EarlyStopping(patience=5, delta=1)
+        early_stopping = EarlyStopping(patience=3, delta=4)
 
         for epoch in range(self.epochs):
             avg_epoch_loss = 0
@@ -158,9 +158,6 @@ class Bert_Model(object):
             early_stopping(avg_epoch_loss)
             if early_stopping.early_stop:
                 break
-
-        # torch.save(bert_embedding_model.state_dict(),
-        #            '../output/state_dict/multi_view/' + self.p.dataset + '/biencoder.pth')
 
         sub_sequences = []
         for i in input_list:
