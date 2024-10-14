@@ -318,7 +318,7 @@ class Train_Embedding_Model(object):
             )
             self.seed_iterator = BidirectionalOneShotIterator(seed_dataloader_head, seed_dataloader_tail)
 
-            early_stopping = EarlyStopping(patience=10, delta=1)
+            early_stopping = EarlyStopping(patience=3, delta=4)
 
             for step in range(init_step, 20000):
                 if self.p.use_cross_seed:
