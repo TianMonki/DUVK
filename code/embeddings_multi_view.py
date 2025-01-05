@@ -73,7 +73,6 @@ class Embeddings(object):
         print()
 
         self.epochs = 3
-        # self.epochs = 1  # this is the rebuttal mode
         print('self.epochs:', self.epochs)
 
         folder_to_make = '../output/state_dict/multi_view/' + self.p.dataset
