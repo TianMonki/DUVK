@@ -12,11 +12,11 @@ Please download the crawl-300d-2M.vec.zip from https://fasttext.cc/docs/en/engli
 
 ## Datasets
 
-### ReVerb45K (obtained from [1])  
+### ReVerb45K
 triples: 45k; noun phrases: 15.5k   
 used by the previous work: [CESI](https://dl.acm.org/doi/abs/10.1145/3178876.3186030) [SIST](https://ieeexplore.ieee.org/abstract/document/8731346) [JOCL](https://dl.acm.org/doi/abs/10.1145/3448016.3452776)   
 
-### OPIEC59K (obtained from [2])   
+### OPIEC59K
 triples: 59k; noun phrases: 22.8k      
 used by the previous work: [CMVC](https://dl.acm.org/doi/abs/10.1145/3534678.3539449)   
 
