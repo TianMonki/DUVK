@@ -19,7 +19,6 @@ class DUVK_Main(object):
         self.triples_list = []  # List of all triples in the dataset
         self.amb_ent = ddict(int)  # Contains ambiguous entities in the dataset
         self.amb_mentions = {}  # Contains all ambiguous mentions
-        # 首字母缩略
         self.isAcronym = {}  # Contains all mentions which can be acronyms
 
         print('dataset:', args.dataset)
